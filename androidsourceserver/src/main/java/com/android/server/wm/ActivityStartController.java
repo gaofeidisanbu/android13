@@ -126,7 +126,7 @@ public class ActivityStartController {
      *         {@link ActivityStarter#execute} is invoked. At that point, the starter should be
      *         considered invalid and no longer modified or used.
      */
-    ActivityStarter obtainStarter(Intent intent, String reason) {
+    ActivityStarter  [obtainStarter(Intent intent, String reason) {
         return mFactory.obtain().setIntent(intent).setReason(reason);
     }
 
