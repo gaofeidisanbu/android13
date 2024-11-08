@@ -1041,9 +1041,7 @@ void InputDispatcher::processNoFocusedWindowAnrLocked() {
 }
 
 /**
- * Check if any of the connections' wait queues have events that are too old.
- * If we waited for events to be ack'ed for more than the window timeout, raise an ANR.
- * Return the time at which we should wake up next.
+nextAnrCheck
  */
 nsecs_t InputDispatcher::processAnrsLocked() {
     const nsecs_t currentTime = now();
